@@ -1,0 +1,76 @@
+/* The toolbar stays with the battlefield; overlays reserve its top strip. */
+.topbar{height:46px;gap:16px}
+.topbar .brand{font-size:22px;gap:10px}
+.topbar .brand-mark{width:35px;height:35px}
+.topbar .brand small{font-size:6px;letter-spacing:1.4px}
+.arena-shell{--arena-toolbar-space:56px}
+.arena-toolbar{position:absolute;top:8px;right:8px;z-index:6;display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:4px;max-width:calc(100% - 16px);padding:4px;background:#18271cdb;border:1px solid #6c8155;box-shadow:2px 2px #0c150c8c}
+.arena-toolbar>button{flex:0 0 auto;margin:0;min-width:0;touch-action:manipulation}
+.arena-toolbar .icon-button{display:grid;place-items:center;width:30px;height:30px;padding:0;font-size:16px}
+.arena-toolbar .icon-button svg{width:17px;height:17px}
+.arena-toolbar .shop-button,.arena-toolbar .quality-button{height:30px;padding:5px 7px;font-size:9px;white-space:nowrap}
+.arena-toolbar kbd{font-size:7px;margin-left:4px}
+.arena-toolbar #view-button{display:grid}
+.arena-shell>.arena-corner{top:calc(var(--arena-toolbar-space) + 5px)}
+.arena-shell>.combo{top:calc(var(--arena-toolbar-space) + 26px)}
+.arena-shell>.ricochet-status{top:calc(var(--arena-toolbar-space) + 26px)}
+.arena-shell>.aim-feedback{top:calc(var(--arena-toolbar-space) + 7px)}
+.arena-shell>.toast{top:calc(var(--arena-toolbar-space) + 9px)}
+.arena-shell>.phase-announcement{top:calc(var(--arena-toolbar-space) + 14px)}
+.arena-shell>.modal-backdrop{top:var(--arena-toolbar-space)}
+.arena-shell>#upgrade-target-panel{top:var(--arena-toolbar-space)}
+@media(min-width:900px){
+  .app{height:100dvh;display:flex;flex-direction:column;padding-top:0;padding-bottom:0}
+  .topbar{flex:0 0 46px;height:46px}
+  .layout{flex:1;min-height:0;margin-top:10px;margin-bottom:8px;grid-template-rows:minmax(0,1fr);align-items:stretch}
+  .play-area{height:100%;min-height:0;display:grid;grid-template-rows:42px auto 10px minmax(0,1fr)}
+  .arena-header{height:42px}
+  .expedition-bar{min-height:36px;margin:3px 0 6px;padding:6px 8px}
+  .xp-track{height:5px;margin:2px 0 3px}
+  .arena-shell{height:auto;min-height:0;max-height:none;aspect-ratio:auto}
+  .sidebar{height:100%;min-height:0;max-height:100%;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+  .sidebar .intro{display:none}
+  .action-sidebar{position:static;min-height:0;max-height:100%;overflow-y:auto;overscroll-behavior:contain}
+  .app-footer{display:flex;flex:0 0 auto;margin:0;padding:4px 0;font-size:7px;border-top-width:1px;line-height:1.5}
+}
+@media(min-width:900px) and (max-width:1099px){
+  .layout{display:grid;grid-template-columns:minmax(0,1fr) 230px;grid-template-rows:auto minmax(0,1fr);gap:10px 14px}
+  .sidebar{grid-column:1/-1;grid-row:1;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;height:auto;padding:0;overflow:visible}
+  .sidebar .loadout-section,.sidebar .side-bottom{display:none}
+  .sidebar .base-card{margin:0;padding:7px 10px}
+  .sidebar .hp-hearts{margin:6px 0}
+  .sidebar .run-stats{margin:0;padding:0;border:0}
+  .play-area{grid-column:1;grid-row:2}
+  .action-sidebar{grid-column:2;grid-row:2}
+  .action-sidebar .control-bar{display:grid;grid-template-columns:minmax(0,1fr);gap:11px}
+  .action-sidebar .hotbar{justify-content:space-between}
+  .action-sidebar .power-control{width:100%;min-width:0;flex:none}
+  .action-sidebar .recall-button{width:100%;margin:0}
+  .action-sidebar .inventory-bar,.action-sidebar .workstation-bar{flex-direction:column;align-items:stretch}
+}
+@media(max-width:899px){
+  .topbar{height:48px}
+  .topbar .brand{font-size:19px}
+  .topbar .top-center{display:none}
+  .arena-toolbar{top:6px;right:6px;gap:3px;max-width:calc(100% - 12px);padding:3px}
+  .arena-toolbar .icon-button{width:28px;height:30px}
+  .arena-toolbar .shop-button,.arena-toolbar .quality-button{padding:4px 6px;font-size:8px}
+  .arena-toolbar kbd{display:none}
+  .arena-shell{--arena-toolbar-space:50px}
+}
+@media(max-width:480px){
+  .arena-toolbar .icon-button{width:27px;height:29px}
+  .arena-toolbar .shop-button,.arena-toolbar .quality-button{height:29px;padding:4px 5px;font-size:8px}
+  .arena-shell>.arena-corner{font-size:6px}
+}
+@media(min-width:900px) and (max-height:620px){
+  .topbar{height:38px;flex-basis:38px}
+  .topbar .brand-mark{width:29px;height:29px}
+  .topbar .brand{font-size:19px}
+  .layout{margin-top:7px;margin-bottom:5px}
+  .play-area{grid-template-rows:36px auto 8px minmax(0,1fr)}
+  .arena-header{height:36px;gap:12px}
+  .expedition-bar{min-height:30px;padding:4px 7px;margin:2px 0 4px}
+  .xp-track{margin:1px 0 2px}
+  .arena-shell>.modal-backdrop{padding:8px}
+}

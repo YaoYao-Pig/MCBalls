@@ -100,7 +100,8 @@ export class AimFeedback {
     const width=parent.clientWidth||parent.getBoundingClientRect().width;
     if(width<=0)return;
     const bannerWidth=this.container.offsetWidth||Math.min(270,width*.58),bannerHeight=this.container.offsetHeight||72;
-    if(point.y<bannerHeight+36&&Math.abs(point.x-width/2)<bannerWidth/2+35){
+    const bannerTop=this.container.offsetTop||12;
+    if(point.y<bannerTop+bannerHeight+24&&Math.abs(point.x-width/2)<bannerWidth/2+35){
       // At most one anchor change per popup: do not chase the pointer every
       // frame. Coordinates are relative to the arena, supplied by the caller.
       this.container.dataset.side=point.x<=width/2?'right':'left';

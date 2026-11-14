@@ -18,21 +18,14 @@
   <link rel="stylesheet" href="./src/build-ui.css">
   <link rel="stylesheet" href="./src/upgrade-target-ui.css">
   <link rel="stylesheet" href="./src/action-sidebar.css">
+  <link rel="stylesheet" href="./src/arena-toolbar.css">
 </head>
 <body>
   <div class="app">
     <header class="topbar">
       <a class="brand" href="./" aria-label="我的世界弹弹乐首页"><span class="brand-mark"></span><span>我的世界弹弹乐<small>BLOCKS. MOBS. ONE MORE SHOT.</small></span></a>
       <div class="top-center"><i></i> 方块守卫战 <span>生存模式</span></div>
-      <div class="top-actions">
-        <button id="quality-button" class="quality-button" aria-label="切换到流畅画质" title="切换光影画质">☀ 光影</button>
-        <button id="craft-button" class="shop-button" title="合成工作台 · C">合成 <kbd>C</kbd></button>
-        <button id="shop-button" class="shop-button" title="村民商店 · E">村民商店 <kbd>E</kbd></button>
-        <button id="view-button" class="icon-button" aria-label="旋转三维视角" title="旋转三维视角">↻</button>
-        <button id="music-button" class="icon-button" aria-label="关闭背景音乐" title="原创背景音乐">♫</button>
-        <button id="sound-button" class="icon-button" aria-label="关闭全部声音" title="全部声音"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m11 5-5 4H3v6h3l5 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg></button>
-        <button id="pause-button" class="icon-button" aria-label="暂停游戏" title="暂停 · Esc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5v14M16 5v14"/></svg></button>
-      </div>
+
     </header>
 
     <main class="layout">
@@ -61,6 +54,15 @@
         <div class="arena-shell">
           <canvas id="game-canvas" width="1000" height="720" tabindex="0" aria-label="方块战场。按住一个方块向后拖拽，松开击球。R 键召回草方块，Esc 暂停。"></canvas>
           <canvas id="fx-canvas" width="1000" height="720" aria-hidden="true"></canvas>
+          <div class="top-actions arena-toolbar" aria-label="游戏快捷操作">
+            <button id="quality-button" class="quality-button" aria-label="切换到流畅画质" title="切换光影画质">☀ 光影</button>
+            <button id="craft-button" class="shop-button" title="合成工作台 · C">合成 <kbd>C</kbd></button>
+            <button id="shop-button" class="shop-button" title="村民商店 · E">村民商店 <kbd>E</kbd></button>
+            <button id="view-button" class="icon-button" aria-label="旋转三维视角" title="旋转三维视角">↻</button>
+            <button id="music-button" class="icon-button" aria-label="关闭背景音乐" title="原创背景音乐">♫</button>
+            <button id="sound-button" class="icon-button" aria-label="关闭全部声音" title="全部声音"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m11 5-5 4H3v6h3l5 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg></button>
+            <button id="pause-button" class="icon-button" aria-label="暂停游戏" title="暂停 · Esc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5v14M16 5v14"/></svg></button>
+          </div>
           <div class="arena-corner corner-left"><b id="arena-realm">主世界</b> <span>◆</span> 信标保卫战</div>
           <div class="arena-corner corner-right" id="arena-state">STANDBY</div>
           <div id="combo" class="combo" hidden><strong>0</strong><span>连击</span></div>
