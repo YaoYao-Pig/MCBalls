@@ -15,7 +15,7 @@ export const BEACON_TIERS = Object.freeze([
 ]);
 
 export const BEACON_UPGRADES = Object.freeze([
-  { id: 'shield', name: '黑曜石护盾', description: '每级增加 30 点护盾上限，并补充新增护盾。', maxRank: 4, minLevel: 1, cost: { stone: 3, iron: 2 } },
+  { id: 'shield', name: '黑曜石护盾', description: '每级增加 30 点护盾上限，并补充新增护盾。', maxRank: 4, minLevel: 1, cost: { stone: 3, iron: 2, obsidian: 1 } },
   { id: 'regen', name: '生命再生', description: '每 10 秒恢复生命，每级恢复 6 点。', maxRank: 3, minLevel: 2, cost: { wood: 4, bone: 2 } },
   { id: 'pulse', name: '红石脉冲', description: '方块撞击信标触发范围伤害；冷却 2 秒，每级提高伤害与范围。', maxRank: 3, minLevel: 2, cost: { iron: 3, gunpowder: 2 } },
   { id: 'recall_burst', name: '回归震荡', description: '召回主方块释放脉冲，此前连击与弹射蓄能提高伤害。', maxRank: 3, minLevel: 2, cost: { iron: 3, endPearl: 1 } },
