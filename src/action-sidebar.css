@@ -1,0 +1,70 @@
+/* Keep the existing controls and their IDs together in an independent rail. */
+.action-sidebar{min-width:0;align-self:start;display:flex;flex-direction:column;gap:14px;padding:13px;background:#1b251ae8;border:2px solid #5b6d45;box-shadow:inset 1px 1px #8b9b6b,3px 4px #10190e}
+.action-sidebar-heading{display:flex;align-items:center;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid #657b455c;color:#e6ebce;font-size:11px}
+.action-sidebar-heading>span{color:#8fa578;font-size:8px}
+.action-sidebar .control-bar{display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:12px;padding:0}
+.action-sidebar .hotbar{justify-content:space-between;gap:5px}
+.action-sidebar .hotbar-slot{width:42px;height:42px}
+.action-sidebar .hotbar-slot img{width:30px;height:30px}
+.action-sidebar .rod-equipment>small{font-size:8px;margin-top:7px}
+.action-sidebar .power-control{width:100%;max-width:none;min-width:0;flex:none}
+.action-sidebar .power-control>div:first-child{display:flex;font-size:10px}
+.action-sidebar .power-control #power-value{display:inline;font-size:8px}
+.action-sidebar .recall-button{width:100%;margin:0;justify-content:flex-start;padding:10px}
+.action-sidebar .recall-button kbd{display:block;margin-left:auto}
+.action-sidebar .build-lists{grid-template-columns:minmax(0,1fr);gap:4px}
+.action-sidebar .build-body{max-height:210px;padding:8px}
+.action-sidebar .build-summary{overflow-wrap:anywhere}
+.action-sidebar .inventory-bar{display:flex;flex-direction:column;align-items:stretch;gap:10px;margin:0;padding-top:12px;border-top:1px solid #657b455c}
+.action-sidebar .materials{gap:6px;justify-content:flex-start}
+.action-sidebar .consumables{flex-wrap:wrap;justify-content:flex-start;gap:6px}
+.action-sidebar .workstation-bar{display:flex;flex-direction:column;align-items:stretch;gap:8px;margin:0;padding-top:12px;border-top:1px solid #657b455c}
+.action-sidebar .workstation-bar>button{text-align:left;padding:9px 10px;font-size:10px}
+.action-sidebar .workstation-bar>span{font-size:9px;line-height:1.6}
+.action-sidebar .workstation-bar kbd{display:inline}
+.action-sidebar .workstation-bar .book-count{margin:0}
+.action-sidebar .game-footer{display:flex;flex-direction:column;gap:7px;margin:0;padding-top:11px;border-top:1px solid #657b455c;font-size:9px}
+.action-sidebar .game-footer>span:first-child{align-items:flex-start}
+.action-sidebar .hint-dot{margin-top:5px}
+.action-sidebar .footer-right{display:block;font-size:8px}
+@media(min-width:1100px){
+  .app{max-width:1880px;padding-left:24px;padding-right:24px}
+  .layout{grid-template-columns:180px minmax(0,1fr) clamp(240px,18vw,280px);gap:18px;align-items:start}
+  .sidebar{min-width:0}
+  .sidebar .base-card{padding:12px 10px}
+  .sidebar .hp-hearts{gap:3px}
+  .sidebar .heart{width:11px;height:10px}
+  .sidebar .run-stats{gap:12px}
+  .sidebar .run-stats>div+div{padding-left:12px}
+  .sidebar .run-stats strong{font-size:24px}
+  .arena-shell{height:calc(100dvh - 220px);min-height:420px;max-height:860px;aspect-ratio:auto}
+  .action-sidebar{position:sticky;top:14px;max-height:calc(100dvh - 92px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#728658 #1d2b19}
+  .app-footer{margin-top:20px}
+}
+@media(min-width:801px) and (max-width:1099px){
+  .action-sidebar{grid-column:2}
+}
+@media(max-width:1099px){
+  .action-sidebar{align-self:stretch;gap:11px}
+  .action-sidebar .control-bar{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+  .action-sidebar .hotbar{gap:4px}
+  .action-sidebar .hotbar-slot{width:34px;height:34px}
+  .action-sidebar .hotbar-slot img{width:24px;height:24px}
+  .action-sidebar .power-control{flex:1;min-width:110px;width:auto}
+  .action-sidebar .recall-button{width:auto;flex:none;margin-left:auto}
+  .action-sidebar .inventory-bar{flex-direction:row;flex-wrap:wrap;justify-content:space-between}
+  .action-sidebar .workstation-bar{flex-direction:row;flex-wrap:wrap;align-items:center}
+  .action-sidebar #station-unlock-hint{flex-basis:100%}
+  .action-sidebar .game-footer{gap:3px}
+}
+@media(max-width:480px){
+  .action-sidebar{padding:10px;gap:10px}
+  .action-sidebar .control-bar{gap:10px}
+  .action-sidebar .hotbar-slot{width:31px;height:31px}
+  .action-sidebar .power-control{min-width:95px}
+  .action-sidebar .power-control>div:first-child{display:block;font-size:9px}
+  .action-sidebar .power-control #power-value{display:block;font-size:7px;margin-top:3px}
+  .action-sidebar .recall-button{width:100%;padding:8px}
+  .action-sidebar .workstation-bar>button{font-size:9px;padding:7px 8px}
+  .action-sidebar .workstation-bar>span{font-size:8px}
+}

@@ -1,0 +1,171 @@
+{
+  "project": "Pixel Perfection Community Edition",
+  "sourceRepository": "https://github.com/Athemis/PixelPerfectionCE",
+  "sourceCommit": "28e38cab7c1f03f86364ef704f705bebcc13cb3d",
+  "retrieved": "2026-11-13",
+  "license": "CC-BY-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "authors": [
+    "XSSheep (Hugh Rutland)",
+    "Pixel Perfection CE contributors: StonePendant, freejusticehere, Stingraych, Nova_Wostra, lazerl0rd, Athemis"
+  ],
+  "changes": "PNG files copied verbatim and renamed locally. In-game scaling, cube UV cropping and tinting are adaptations under CC-BY-SA-4.0.",
+  "files": [
+    {
+      "file": "grass-top.png",
+      "sourcePath": "assets/minecraft/textures/block/grass_block_top.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/grass_block_top.png",
+      "gitBlobSha": "24c8020318183cac9749cfd1f4d918c11958878b"
+    },
+    {
+      "file": "grass-side.png",
+      "sourcePath": "assets/minecraft/textures/block/grass_block_side.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/grass_block_side.png",
+      "gitBlobSha": "633da7a293cabe604f62b237005fab942c6fbf28"
+    },
+    {
+      "file": "dirt.png",
+      "sourcePath": "assets/minecraft/textures/block/dirt.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/dirt.png",
+      "gitBlobSha": "1a72f2a4dc23c907da3c70ececed263ff8b25376"
+    },
+    {
+      "file": "stone.png",
+      "sourcePath": "assets/minecraft/textures/block/stone.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/stone.png",
+      "gitBlobSha": "6f76fd664d1a55454b547f6dccfbd9ceecf852dc"
+    },
+    {
+      "file": "iron.png",
+      "sourcePath": "assets/minecraft/textures/block/iron_block.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/iron_block.png",
+      "gitBlobSha": "407fe20a0cc7965be0ab0577a3cb73469aeffd48"
+    },
+    {
+      "file": "ice.png",
+      "sourcePath": "assets/minecraft/textures/block/ice.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/ice.png",
+      "gitBlobSha": "e258aa1abec513ba37b0e6761f84d10193682fe7"
+    },
+    {
+      "file": "gold.png",
+      "sourcePath": "assets/minecraft/textures/block/gold_block.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/gold_block.png",
+      "gitBlobSha": "4ed1b99ae604c29637bc88586387a21c3410387f"
+    },
+    {
+      "file": "diamond.png",
+      "sourcePath": "assets/minecraft/textures/block/diamond_block.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/diamond_block.png",
+      "gitBlobSha": "c55ff5f370601686c52c8cc37bd7dc9a4844e462"
+    },
+    {
+      "file": "obsidian.png",
+      "sourcePath": "assets/minecraft/textures/block/obsidian.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/obsidian.png",
+      "gitBlobSha": "c9e5a08461c5c98247cbededcbbf97fc1ac176ad"
+    },
+    {
+      "file": "redstone.png",
+      "sourcePath": "assets/minecraft/textures/block/redstone_block.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/redstone_block.png",
+      "gitBlobSha": "a99cf815f56636d31740a3071b8073bccc97c0ea"
+    },
+    {
+      "file": "tnt-side.png",
+      "sourcePath": "assets/minecraft/textures/block/tnt_side.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/tnt_side.png",
+      "gitBlobSha": "2925d57e1ed182c210b23fdd713a0eee3b29c3a3"
+    },
+    {
+      "file": "tnt-top.png",
+      "sourcePath": "assets/minecraft/textures/block/tnt_top.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/tnt_top.png",
+      "gitBlobSha": "27b80909eed5ceca8d844d409a83839010de5d58"
+    },
+    {
+      "file": "wood-planks.png",
+      "sourcePath": "assets/minecraft/textures/block/oak_planks.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/oak_planks.png",
+      "gitBlobSha": "58d55d3dfc2848ad6e998913e8e9e337aeab506d"
+    },
+    {
+      "file": "crafting-top.png",
+      "sourcePath": "assets/minecraft/textures/block/crafting_table_top.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/crafting_table_top.png",
+      "gitBlobSha": "4d8fd01572f04a45bacce043792f6ad4e331384c"
+    },
+    {
+      "file": "crafting-side.png",
+      "sourcePath": "assets/minecraft/textures/block/crafting_table_front.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/crafting_table_front.png",
+      "gitBlobSha": "e9efe689335c0865cbee92096a9e334676e9aa72"
+    },
+    {
+      "file": "stick.png",
+      "sourcePath": "assets/minecraft/textures/item/stick.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/item/stick.png",
+      "gitBlobSha": "fe57d9cfa5fee7e4ecbca33d08be2463bf6c1453"
+    },
+    {
+      "file": "bone.png",
+      "sourcePath": "assets/minecraft/textures/item/bone.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/item/bone.png",
+      "gitBlobSha": "8574378829f9f43f6f812adfe639a31b4c81199b"
+    },
+    {
+      "file": "blaze-rod.png",
+      "sourcePath": "assets/minecraft/textures/item/blaze_rod.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/item/blaze_rod.png",
+      "gitBlobSha": "70576f94c94686c0f7996d7ab45c371452263b76"
+    },
+    {
+      "file": "end-rod.png",
+      "sourcePath": "assets/minecraft/textures/block/end_rod.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/block/end_rod.png",
+      "gitBlobSha": "caf6b9c3d7c73ee0e588297755e09cd6d71b85e2"
+    },
+    {
+      "file": "zombie.png",
+      "sourcePath": "assets/minecraft/textures/entity/zombie/zombie.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/entity/zombie/zombie.png",
+      "gitBlobSha": "b1a72b9498bf9fae4735bca1fcb3f5329001a32c"
+    },
+    {
+      "file": "skeleton.png",
+      "sourcePath": "assets/minecraft/textures/entity/skeleton/skeleton.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/entity/skeleton/skeleton.png",
+      "gitBlobSha": "879ee28be8aecf35d3e8e29789f3e3ab7ff544e3"
+    },
+    {
+      "file": "creeper.png",
+      "sourcePath": "assets/minecraft/textures/entity/creeper/creeper.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/entity/creeper/creeper.png",
+      "gitBlobSha": "f0ae9477fdc64be45096cb412eb31bacf0ddb2dd"
+    },
+    {
+      "file": "slime.png",
+      "sourcePath": "assets/minecraft/textures/entity/slime/slime.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/entity/slime/slime.png",
+      "gitBlobSha": "90cd2e7c139e9aa7e24bc725aa32a9dcb1e24069"
+    },
+    {
+      "file": "gui-icons.png",
+      "sourcePath": "assets/minecraft/textures/gui/icons.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/gui/icons.png",
+      "gitBlobSha": "5b7a1fc8187020e3934bb7ea8d9f09953ea495f6"
+    },
+    {
+      "file": "gui-widgets.png",
+      "sourcePath": "assets/minecraft/textures/gui/widgets.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/gui/widgets.png",
+      "gitBlobSha": "c3b485c083d94d7e5f42a84db3cd90915a48b338"
+    },
+    {
+      "file": "ui-background.png",
+      "sourcePath": "assets/minecraft/textures/gui/options_background.png",
+      "sourceUrl": "https://raw.githubusercontent.com/Athemis/PixelPerfectionCE/28e38cab7c1f03f86364ef704f705bebcc13cb3d/assets/minecraft/textures/gui/options_background.png",
+      "gitBlobSha": "a5a68dbb39e35f129ff109e926c0cc21d14228f5"
+    }
+  ]
+}

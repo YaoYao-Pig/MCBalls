@@ -1,0 +1,1047 @@
+{
+  "product": "Minecraft Java Edition",
+  "version": "1.21.5",
+  "type": "release",
+  "retrieved": "2026-11-13",
+  "source": "Mojang official Java client JAR",
+  "rights": "Copyright Mojang / Microsoft. Proprietary game assets; NOT open source and NOT CC-BY-SA. Extracted only for this local prototype; no publishing performed.",
+  "versionManifestUrl": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+  "versionJsonUrl": "https://piston-meta.mojang.com/v1/packages/deed2dfe12bd2f6dd3397178c68ce07d0a8f2604/1.21.5.json",
+  "versionJsonSha1": "deed2dfe12bd2f6dd3397178c68ce07d0a8f2604",
+  "clientJarUrl": "https://piston-data.mojang.com/v1/objects/b88808bbb3da8d9f453694b5d8f74a3396f1a533/client.jar",
+  "clientJarSha1": "b88808bbb3da8d9f453694b5d8f74a3396f1a533",
+  "clientJarBytes": 28984409,
+  "clientJarChecksumVerified": true,
+  "usageGuidelinesUrl": "https://www.minecraft.net/en-us/usage-guidelines",
+  "eulaUrl": "https://www.minecraft.net/en-us/eula",
+  "modifications": "PNG bytes extracted verbatim from client.jar; local filenames renamed for renderer compatibility.",
+  "files": [
+    {
+      "file": "grass-top.png",
+      "jarEntry": "assets/minecraft/textures/block/grass_block_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 298,
+      "sha256": "52f44b64ce884a13dfe35e4b4da2e35898b790dd4d7a5ea536f1b0c0d56d29b4"
+    },
+    {
+      "file": "grass-side.png",
+      "jarEntry": "assets/minecraft/textures/block/grass_block_side.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 345,
+      "sha256": "ab572ac7ebd373abdeb961de1f3cba0afcd91e1acb700745ece4f719790bae3d"
+    },
+    {
+      "file": "grass-side-overlay.png",
+      "jarEntry": "assets/minecraft/textures/block/grass_block_side_overlay.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 177,
+      "sha256": "43d98318407d9d122b83468cf183d18722e548c2144f9c2ffe2021b5c3e770e0"
+    },
+    {
+      "file": "dirt.png",
+      "jarEntry": "assets/minecraft/textures/block/dirt.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 200,
+      "sha256": "1f0f0e619e7dfe683ea45b9254859f14b0ed5f1debdb242ea878828575be5bf0"
+    },
+    {
+      "file": "stone.png",
+      "jarEntry": "assets/minecraft/textures/block/stone.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 157,
+      "sha256": "33ac70ba8cb701087642a12c5fd29c1ba3006dc4730e9b014ed3a19ce7cdda7b"
+    },
+    {
+      "file": "iron.png",
+      "jarEntry": "assets/minecraft/textures/block/iron_block.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 184,
+      "sha256": "910646c90f391ec42cfebdd356ed1e1be36ad513a684a930e38c36ab610a7a24"
+    },
+    {
+      "file": "ice.png",
+      "jarEntry": "assets/minecraft/textures/block/packed_ice.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 193,
+      "sha256": "69bbfa529e480c86fac5ba3c8607b8d263e140d0f4d0f1c915fac20b5aa2b691"
+    },
+    {
+      "file": "gold.png",
+      "jarEntry": "assets/minecraft/textures/block/gold_block.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 218,
+      "sha256": "a66720b7a7a3a253ae02ac9ebafeb74fbe1e933dac1c752c8cd18bcd75422509"
+    },
+    {
+      "file": "diamond.png",
+      "jarEntry": "assets/minecraft/textures/block/diamond_block.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 218,
+      "sha256": "93a63fa544d416188412584fffdf01e7fcb218f8a7e9f3e82232e773fc207fc9"
+    },
+    {
+      "file": "obsidian.png",
+      "jarEntry": "assets/minecraft/textures/block/obsidian.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 189,
+      "sha256": "d9c7dc812d8e8b995e22caff2b10c1fc663b5e127a94c20a7476cfd88af2cd82"
+    },
+    {
+      "file": "redstone.png",
+      "jarEntry": "assets/minecraft/textures/block/redstone_block.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 174,
+      "sha256": "92c8738669b45a956f4783f3d928ca3d3b99a56546650070b24779428bf50291"
+    },
+    {
+      "file": "wood-planks.png",
+      "jarEntry": "assets/minecraft/textures/block/oak_planks.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 202,
+      "sha256": "3a33db67a3ba30537d0890a5cb37c8087ca336be89cbb1393a71c23224e361a8"
+    },
+    {
+      "file": "beacon.png",
+      "jarEntry": "assets/minecraft/textures/block/beacon.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 198,
+      "sha256": "dc3a8dcbb98f6aa619e6fb9ebb005ee2b6ae2adbf34367c3a9902850c55535f4"
+    },
+    {
+      "file": "glass.png",
+      "jarEntry": "assets/minecraft/textures/block/glass.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 147,
+      "sha256": "cb89c706dce86eac3123cef087d359b5f23098b658a468fb91662b4a9922bcd0"
+    },
+    {
+      "file": "tnt-side.png",
+      "jarEntry": "assets/minecraft/textures/block/tnt_side.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 176,
+      "sha256": "950388eb9f86f9882c11e4ef291c4da8416433d9cac8ce2713abfb322f2ca159"
+    },
+    {
+      "file": "tnt-top.png",
+      "jarEntry": "assets/minecraft/textures/block/tnt_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 200,
+      "sha256": "59b071086ceddf43d8a95dec7441e450781215b89e7998c906224af859b04c25"
+    },
+    {
+      "file": "tnt-bottom.png",
+      "jarEntry": "assets/minecraft/textures/block/tnt_bottom.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 105,
+      "sha256": "bb7837ad4d44f165f3fe78d5eec19dc0713e74e9a724f214643c900bc12c3778"
+    },
+    {
+      "file": "crafting-top.png",
+      "jarEntry": "assets/minecraft/textures/block/crafting_table_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 211,
+      "sha256": "8046b35b6ed5696ec21a0135b8a897f35acd7f2500b6b2e4b5b28ae4d25ac76c"
+    },
+    {
+      "file": "crafting-side.png",
+      "jarEntry": "assets/minecraft/textures/block/crafting_table_front.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 271,
+      "sha256": "16c23b5802c71aa439b9d5a5707d304f1cf84d45a08c146aa4078cd5073067f2"
+    },
+    {
+      "file": "stick.png",
+      "jarEntry": "assets/minecraft/textures/item/stick.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 136,
+      "sha256": "2b5a6b7202fcd3a45663ccf249fe87de076e8c735e0b6ab8a3bf2a812332b4ff"
+    },
+    {
+      "file": "bone.png",
+      "jarEntry": "assets/minecraft/textures/item/bone.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 164,
+      "sha256": "f5f2a37e7466f2983c00550874a2a94d2d006eae52b0e73acb722fadeb9bdb3b"
+    },
+    {
+      "file": "blaze-rod.png",
+      "jarEntry": "assets/minecraft/textures/item/blaze_rod.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 168,
+      "sha256": "d402755c56b25d84ce73ba1f064252844b2ee9b2f6e3d17566450687a26d9c81"
+    },
+    {
+      "file": "end-rod.png",
+      "jarEntry": "assets/minecraft/textures/block/end_rod.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 159,
+      "sha256": "94f20a6cd82eed61af0597d690f26411f83693ef943f2c0d31d9fa5a5721128e"
+    },
+    {
+      "file": "zombie.png",
+      "jarEntry": "assets/minecraft/textures/entity/zombie/zombie.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 774,
+      "sha256": "1c879744424077ab6f7d8b13b015dfc9d5e0efee6c70696de5c2ee588f4f563a"
+    },
+    {
+      "file": "skeleton.png",
+      "jarEntry": "assets/minecraft/textures/entity/skeleton/skeleton.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 518,
+      "sha256": "66524aa68d4e94fd3117df9b6e40cb48da5526e24a7f079c2c4852bca0d1c20e"
+    },
+    {
+      "file": "creeper.png",
+      "jarEntry": "assets/minecraft/textures/entity/creeper/creeper.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 2835,
+      "sha256": "a98947a543623cedca72016e06aa24dc34807251ff8e2433be158c86a977c9e9"
+    },
+    {
+      "file": "enderman.png",
+      "jarEntry": "assets/minecraft/textures/entity/enderman/enderman.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 334,
+      "sha256": "ac2a712566f11083a7e7f44ca904088662157144d35e764002be04fc9c34d50c"
+    },
+    {
+      "file": "slime.png",
+      "jarEntry": "assets/minecraft/textures/entity/slime/slime.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 314,
+      "sha256": "c724fc4eb07da3e2e10cc4b269d554bfb19271a560e2dbd4b74f71fae050f955"
+    },
+    {
+      "file": "enderman-eyes.png",
+      "jarEntry": "assets/minecraft/textures/entity/enderman/enderman_eyes.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 109,
+      "sha256": "da9b3ab2eea2011c5cafbd7d99f33e0a70ba72bcf43254fb98a24972c02ec19c"
+    },
+    {
+      "file": "blaze.png",
+      "jarEntry": "assets/minecraft/textures/entity/blaze.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 370,
+      "sha256": "ed70f0215135bb836379e068b3b4fe1f2f792d5c6b94f1a4cd48b4f91015eee5"
+    },
+    {
+      "file": "wither.png",
+      "jarEntry": "assets/minecraft/textures/entity/wither/wither.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 780,
+      "sha256": "3ce19a51b824f38dfc8a3040eb2204bda59054bcf2ee43275f620c81e4faa47a"
+    },
+    {
+      "file": "dragon.png",
+      "jarEntry": "assets/minecraft/textures/entity/enderdragon/dragon.png",
+      "width": 256,
+      "height": 256,
+      "bytes": 4555,
+      "sha256": "a7d5bc7b373bfee01a5ec721914fd9f584dde5f7977303c63e857c48f99c42bf"
+    },
+    {
+      "file": "warden.png",
+      "jarEntry": "assets/minecraft/textures/entity/warden/warden.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1773,
+      "sha256": "244f0c7c645afc0b480deb07cb4bf1e37494ca865008853a02e45f40705d459c"
+    },
+    {
+      "file": "oak-log.png",
+      "jarEntry": "assets/minecraft/textures/block/oak_log.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 193,
+      "sha256": "060c93128fb65aa350a84e4b6576e616c47d40211bbe537cfe923a81d072e30c"
+    },
+    {
+      "file": "oak-log-top.png",
+      "jarEntry": "assets/minecraft/textures/block/oak_log_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 223,
+      "sha256": "62f38b25ae28b6c4842ee5a83f790394b1ec4d6c6f20dd52044394855346a2a7"
+    },
+    {
+      "file": "oak-leaves.png",
+      "jarEntry": "assets/minecraft/textures/block/oak_leaves.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 202,
+      "sha256": "69c9c7048695e014aee6b8a2c4cb080607bd7a2a5291c06218b8134cbfcdc04f"
+    },
+    {
+      "file": "iron-ore.png",
+      "jarEntry": "assets/minecraft/textures/block/iron_ore.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 222,
+      "sha256": "d3a50d2c689f8ade6445488f2edc68ca107c343ef09df8eaa27e51aa83d5a5ed"
+    },
+    {
+      "file": "coal-ore.png",
+      "jarEntry": "assets/minecraft/textures/block/coal_ore.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 235,
+      "sha256": "5088136494a0109d597c1bcdce6f8ba74b4284703ee71a95f4134db03e7df5f2"
+    },
+    {
+      "file": "diamond-ore.png",
+      "jarEntry": "assets/minecraft/textures/block/diamond_ore.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 235,
+      "sha256": "79abdde719a9bdf99279ab3f19b90da8e949c6c7cb7dcf453e0c3ce1f568577f"
+    },
+    {
+      "file": "gunpowder.png",
+      "jarEntry": "assets/minecraft/textures/item/gunpowder.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 179,
+      "sha256": "e23356d9ff24102af4d9ffb48e319d73f235f8bdca8da92fa3a26cef791d33e1"
+    },
+    {
+      "file": "ender-pearl.png",
+      "jarEntry": "assets/minecraft/textures/item/ender_pearl.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 206,
+      "sha256": "ff40529856c82317ce24cec4ba384971f56aec0f8ce3756e059d2eb17f3b310a"
+    },
+    {
+      "file": "apple.png",
+      "jarEntry": "assets/minecraft/textures/item/apple.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 207,
+      "sha256": "9b1aef1aaa41229dbe2bc97657b8650527b14cc20a6236e823f1682c4d44c5a2"
+    },
+    {
+      "file": "shield-base.png",
+      "jarEntry": "assets/minecraft/textures/entity/shield_base.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 547,
+      "sha256": "bcaa12353fec79542459ad2161081f61919a358887eb4ffc8b7c021aee869edd"
+    },
+    {
+      "file": "shield-base-nopattern.png",
+      "jarEntry": "assets/minecraft/textures/entity/shield_base_nopattern.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 605,
+      "sha256": "c7bf1836060d647130d60dda3a3a3fb91f7c8f5a4fc96dc675493ecc9fcd6a8d"
+    },
+    {
+      "file": "iron-golem.png",
+      "jarEntry": "assets/minecraft/textures/entity/iron_golem/iron_golem.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 1924,
+      "sha256": "381bdfed52c5b82fcad3fb0090c5e8c093adf6c335cb4b0e5f68d7ac8c05ab07"
+    },
+    {
+      "file": "snow-golem.png",
+      "jarEntry": "assets/minecraft/textures/entity/snow_golem.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 477,
+      "sha256": "904567a77915ad2de4ded6a44e767667f4bd20c94126b6265c7de55500ad1eb5"
+    },
+    {
+      "file": "villager.png",
+      "jarEntry": "assets/minecraft/textures/entity/villager/villager.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 841,
+      "sha256": "dca7cc3e7184572764faac9f4e517efbb47c0b0783ffa0c561a99afc7e3b77b9"
+    },
+    {
+      "file": "villager-plains.png",
+      "jarEntry": "assets/minecraft/textures/entity/villager/type/plains.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 779,
+      "sha256": "a55cbe4c976f52a3fc6b39cd1823fa3b7c71e85512fffce1650e24692e3c5c5a"
+    },
+    {
+      "file": "librarian.png",
+      "jarEntry": "assets/minecraft/textures/entity/villager/profession/librarian.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 470,
+      "sha256": "3144e846ddf68623d3d3cbf54828813e5d573892d382f68190849ce1b2ff665f"
+    },
+    {
+      "file": "weaponsmith.png",
+      "jarEntry": "assets/minecraft/textures/entity/villager/profession/weaponsmith.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 1004,
+      "sha256": "433c84e59254a15e9664c09409adf5cc7edf0a744fa8fca07f8c11f3286e1841"
+    },
+    {
+      "file": "toolsmith.png",
+      "jarEntry": "assets/minecraft/textures/entity/villager/profession/toolsmith.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 756,
+      "sha256": "e18f9cf8d105b084d7baaad8967c108b8372682e1e3756516b90230d571fc23e"
+    },
+    {
+      "file": "iron-ingot.png",
+      "jarEntry": "assets/minecraft/textures/item/iron_ingot.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 189,
+      "sha256": "4625aa2c32c74bd6796c7ba8e7ee6300db8d2f24fb38c9d9324a63b262a44391"
+    },
+    {
+      "file": "pumpkin.png",
+      "jarEntry": "assets/minecraft/textures/block/carved_pumpkin.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 221,
+      "sha256": "824da242f8c8ad4d7bd72b2e48230abcecb14a418fdbb93b18b8ad6151aa949a"
+    },
+    {
+      "file": "pumpkin-side.png",
+      "jarEntry": "assets/minecraft/textures/block/pumpkin_side.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 187,
+      "sha256": "616ef8db5a90e1f02843f4c3fe5ecb57e681a7cbad695bc7c1b1e34f7c7dc3e9"
+    },
+    {
+      "file": "pumpkin-top.png",
+      "jarEntry": "assets/minecraft/textures/block/pumpkin_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 212,
+      "sha256": "aa23338fd28b9c6d7c00a1be45946a31ae36663efa83371ea4f897639104d12f"
+    },
+    {
+      "file": "snow-block.png",
+      "jarEntry": "assets/minecraft/textures/block/snow.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 166,
+      "sha256": "05201107fc2c60db4dc59f778a9ca7cb6101b2a332da696b33ce4b0cd2a02019"
+    },
+    {
+      "file": "enchanting-table-top.png",
+      "jarEntry": "assets/minecraft/textures/block/enchanting_table_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 175,
+      "sha256": "778573d8e711b0b3be8784a581b74e0ff0fef01163dbef3a858f24cb534ce6cb"
+    },
+    {
+      "file": "enchanting-table-side.png",
+      "jarEntry": "assets/minecraft/textures/block/enchanting_table_side.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 246,
+      "sha256": "7b94e576e7abeace63f32ff372ecdd63717c5c9931da933dc51e01ccddb65934"
+    },
+    {
+      "file": "enchanting-table-bottom.png",
+      "jarEntry": "assets/minecraft/textures/block/enchanting_table_bottom.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 189,
+      "sha256": "d9c7dc812d8e8b995e22caff2b10c1fc663b5e127a94c20a7476cfd88af2cd82"
+    },
+    {
+      "file": "enchanting-book.png",
+      "jarEntry": "assets/minecraft/textures/entity/enchanting_table_book.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 322,
+      "sha256": "efcc111150f0f3c7d0b8e88a8d430dbeeb04618300034ea2180fa0d0257a24f2"
+    },
+    {
+      "file": "anvil.png",
+      "jarEntry": "assets/minecraft/textures/block/anvil.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 170,
+      "sha256": "2266db251b99f5df98d8f049e3f7dd6cd85e8146b46011f6918995f392721e48"
+    },
+    {
+      "file": "anvil-top.png",
+      "jarEntry": "assets/minecraft/textures/block/anvil_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 192,
+      "sha256": "d5555ea400a6e4b60db3e938dc2ed970939ed2fbc0ec8d5104f169cbce8ebce1"
+    },
+    {
+      "file": "book.png",
+      "jarEntry": "assets/minecraft/textures/item/book.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 203,
+      "sha256": "e9f710d62e16776df7e5bf05dcaa187d40cc1428f4fd18644e3ff67062f9fff2"
+    },
+    {
+      "file": "enchanted-book.png",
+      "jarEntry": "assets/minecraft/textures/item/enchanted_book.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 251,
+      "sha256": "f96da147fcf6f373df00ab5181043ea0c76af4ba7025f43f377f678ac466fb43"
+    },
+    {
+      "file": "diamond-item.png",
+      "jarEntry": "assets/minecraft/textures/item/diamond.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 208,
+      "sha256": "b27b081fde6a794dfb52d37f4ab2a86931ce127323f786a27cea41d2dbe913a2"
+    },
+    {
+      "file": "snowball.png",
+      "jarEntry": "assets/minecraft/textures/item/snowball.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 189,
+      "sha256": "4e4dff01a4935f58ad5a3f80700b4b85062baa0b395736b2e53e189107673d81"
+    },
+    {
+      "file": "fire-charge.png",
+      "jarEntry": "assets/minecraft/textures/item/fire_charge.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 206,
+      "sha256": "d175f39053b128f2677135dfe3f8f83f949cfab3d40e7ce48aa7eae170692e34"
+    },
+    {
+      "file": "bookshelf.png",
+      "jarEntry": "assets/minecraft/textures/block/bookshelf.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 319,
+      "sha256": "a1c9dd1cdd60c60dbd285645af578e4e3f473704489ccab6d329071842f70197"
+    },
+    {
+      "file": "lapis-lazuli.png",
+      "jarEntry": "assets/minecraft/textures/item/lapis_lazuli.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 188,
+      "sha256": "261b626e66fc29d6a28990ac36c74a04afa2e1d03daff00c5f3b3e5a79463a14"
+    },
+    {
+      "file": "evoker.png",
+      "jarEntry": "assets/minecraft/textures/entity/illager/evoker.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 828,
+      "sha256": "baad89a4314f42e237b5e217739f77679e25db09cbe9b3b71df93c3e207f5404"
+    },
+    {
+      "file": "vex.png",
+      "jarEntry": "assets/minecraft/textures/entity/illager/vex.png",
+      "width": 32,
+      "height": 32,
+      "bytes": 382,
+      "sha256": "db0d832a644c4c6f06cc24bc751ed3e6b1db3284ea7ccbedea648d483cc486b6"
+    },
+    {
+      "file": "vex-charging.png",
+      "jarEntry": "assets/minecraft/textures/entity/illager/vex_charging.png",
+      "width": 32,
+      "height": 32,
+      "bytes": 421,
+      "sha256": "3f9b436f3146c2c53b4ac47468c8d4465d632bd8cd455f0f6da1f967853dc8bd"
+    },
+    {
+      "file": "vindicator.png",
+      "jarEntry": "assets/minecraft/textures/entity/illager/vindicator.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 865,
+      "sha256": "a82d0f7012c464b9421708bd9b4fc1d742c8149512c3be47a315bc67466d0618"
+    },
+    {
+      "file": "witch.png",
+      "jarEntry": "assets/minecraft/textures/entity/witch.png",
+      "width": 64,
+      "height": 128,
+      "bytes": 1092,
+      "sha256": "d42d8dd0f1dbafcce3535304180b0f6d22c6277cb551cf190aaa54e18ef5282a"
+    },
+    {
+      "file": "trident.png",
+      "jarEntry": "assets/minecraft/textures/entity/trident.png",
+      "width": 32,
+      "height": 32,
+      "bytes": 278,
+      "sha256": "cee14236960dae0960c0d0d14e4f61cf2cade3c160887b532d5d8a9e9e6ef530"
+    },
+    {
+      "file": "zombified-piglin.png",
+      "jarEntry": "assets/minecraft/textures/entity/piglin/zombified_piglin.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 1105,
+      "sha256": "6b2b623bd785c1df394841628f21970fba439181cc05b92ff5d3e2927d4670f4"
+    },
+    {
+      "file": "piglin-brute.png",
+      "jarEntry": "assets/minecraft/textures/entity/piglin/piglin_brute.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 1132,
+      "sha256": "d14fe8f62449f4eb36a67f57691faa659dbff39e1573e8c9e4161e0e833a21bc"
+    },
+    {
+      "file": "magma-cube.png",
+      "jarEntry": "assets/minecraft/textures/entity/slime/magmacube.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 732,
+      "sha256": "5a094598401348a086c7e2c17d749cd5b903b09259f96959e7937fcd0cac6968"
+    },
+    {
+      "file": "ghast.png",
+      "jarEntry": "assets/minecraft/textures/entity/ghast/ghast.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 506,
+      "sha256": "d64b740f378d404e5e34edda367cb4d2e86313b9ea9754f1c7e90ef0e56ea5a9"
+    },
+    {
+      "file": "ghast-shooting.png",
+      "jarEntry": "assets/minecraft/textures/entity/ghast/ghast_shooting.png",
+      "width": 64,
+      "height": 32,
+      "bytes": 561,
+      "sha256": "822fe8a84f05772343e1186ddfa5cf1f5152e83fcb188214032c8d76e4ce7456"
+    },
+    {
+      "file": "drowned.png",
+      "jarEntry": "assets/minecraft/textures/entity/zombie/drowned.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 453,
+      "sha256": "c0553689bf1cdef2eca01f88cc7fcd1ccee47f702ba320ad5dfa6619c34fb778"
+    },
+    {
+      "file": "drowned-outer.png",
+      "jarEntry": "assets/minecraft/textures/entity/zombie/drowned_outer_layer.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 938,
+      "sha256": "c493c87f6a01f5a53cc86250ff3d1ce488c3014e2ee9adf5b5290e20ee6bf3d4"
+    },
+    {
+      "file": "husk.png",
+      "jarEntry": "assets/minecraft/textures/entity/zombie/husk.png",
+      "width": 64,
+      "height": 64,
+      "bytes": 759,
+      "sha256": "0a4249ec6ba5aac74c5128c6753386c56abd451216da5396beab7c65e99c0181"
+    },
+    {
+      "file": "end-crystal.png",
+      "jarEntry": "assets/minecraft/textures/entity/end_crystal/end_crystal.png",
+      "width": 128,
+      "height": 64,
+      "bytes": 1199,
+      "sha256": "753671b80bd3a88f301b7ec44e26a48003afc176f32d0a3338b37df284edc103"
+    },
+    {
+      "file": "netherrack.png",
+      "jarEntry": "assets/minecraft/textures/block/netherrack.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 213,
+      "sha256": "3c0208b749c5393b9bad9d57ed3d830326a02b8cbd8444e96d4d0d277f85625f"
+    },
+    {
+      "file": "soul-sand.png",
+      "jarEntry": "assets/minecraft/textures/block/soul_sand.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 206,
+      "sha256": "0b064ae1753254dd4d2f09c793ae368838779c689406dd22156222448d6f698a"
+    },
+    {
+      "file": "basalt-side.png",
+      "jarEntry": "assets/minecraft/textures/block/basalt_side.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 187,
+      "sha256": "4d775e556719fd74851584fa9c53ddb5abb4969cefba8eb5ef73e35373423085"
+    },
+    {
+      "file": "basalt-top.png",
+      "jarEntry": "assets/minecraft/textures/block/basalt_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 211,
+      "sha256": "d31e1840ac2f25add0890516f3e2ae38bf1b686b2aca360adcf32c25b980cfe5"
+    },
+    {
+      "file": "blackstone.png",
+      "jarEntry": "assets/minecraft/textures/block/blackstone.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 204,
+      "sha256": "99233c7c54210c813163833158dd631b0bb495c03db5d90aa2cd76be195f3678"
+    },
+    {
+      "file": "lava-still.png",
+      "jarEntry": "assets/minecraft/textures/block/lava_still.png",
+      "width": 16,
+      "height": 320,
+      "bytes": 4910,
+      "sha256": "7ba546bb9093670f1277ad39d4e973a693ce362f1854a9db00fdb7ab3e434c3c"
+    },
+    {
+      "file": "lava-flow.png",
+      "jarEntry": "assets/minecraft/textures/block/lava_flow.png",
+      "width": 32,
+      "height": 512,
+      "bytes": 3164,
+      "sha256": "d64204c75b085e8a58b349d785e7c0bfcec3d3fdc91d37f8ae5c9e491863aaf8"
+    },
+    {
+      "file": "end-stone.png",
+      "jarEntry": "assets/minecraft/textures/block/end_stone.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 206,
+      "sha256": "48eadb631e434beb46f380440db106519da1e692e74954a8bd2c987d6c978d76"
+    },
+    {
+      "file": "end-portal-frame-top.png",
+      "jarEntry": "assets/minecraft/textures/block/end_portal_frame_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 208,
+      "sha256": "c37045c38c98bfcd6a5c093afb3a155598e9b8f4886ed3597f823818922e468d"
+    },
+    {
+      "file": "end-portal-frame-side.png",
+      "jarEntry": "assets/minecraft/textures/block/end_portal_frame_side.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 241,
+      "sha256": "dae20a99b71aa031228443e9dde1e7268ea0397df51bb99955f48e3a8b70e525"
+    },
+    {
+      "file": "end-portal-frame-eye.png",
+      "jarEntry": "assets/minecraft/textures/block/end_portal_frame_eye.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 178,
+      "sha256": "0dd58da09b154ba6d1e0d6e953f3064ed941f927a8e2544e3ae29744f9b3416b"
+    },
+    {
+      "file": "nether-portal.png",
+      "jarEntry": "assets/minecraft/textures/block/nether_portal.png",
+      "width": 16,
+      "height": 512,
+      "bytes": 9005,
+      "sha256": "845ceb03d82607ec15ab26d32c6e389efb9f7a118baea3944b68363c33f70172"
+    },
+    {
+      "file": "lightning-rod.png",
+      "jarEntry": "assets/minecraft/textures/block/lightning_rod.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 146,
+      "sha256": "87690f8a45273383e0d4ba99fb8e5e6c55ab59fef5db05f69659089c74d762b6"
+    },
+    {
+      "file": "crimson-stem.png",
+      "jarEntry": "assets/minecraft/textures/block/crimson_stem.png",
+      "width": 16,
+      "height": 80,
+      "bytes": 471,
+      "sha256": "2b61f8e9d0cecb8790e01ee40c37b5ef6bdb386aa4bc7a7eae7ab5d182622031"
+    },
+    {
+      "file": "crimson-stem-top.png",
+      "jarEntry": "assets/minecraft/textures/block/crimson_stem_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 240,
+      "sha256": "a21c0711a60301c749497ffd909538bbbd45dd042142371c4a597563950e1963"
+    },
+    {
+      "file": "blaze-powder.png",
+      "jarEntry": "assets/minecraft/textures/item/blaze_powder.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 278,
+      "sha256": "be1d8c93bbff955c94c194bb944b200d884d30fcc7e221fff739881d6ed5eca2"
+    },
+    {
+      "file": "ender-eye.png",
+      "jarEntry": "assets/minecraft/textures/item/ender_eye.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 214,
+      "sha256": "cb9003416a29bdd869a494467a01dba3403b221b88fe3e0a0dc41906d5d49afa"
+    },
+    {
+      "file": "wooden-pickaxe.png",
+      "jarEntry": "assets/minecraft/textures/item/wooden_pickaxe.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 175,
+      "sha256": "a6c2a1de2d8bf88516e5c1cd438d392e9f1dc4fc3e283ecabc838848cc4440a5"
+    },
+    {
+      "file": "stone-pickaxe.png",
+      "jarEntry": "assets/minecraft/textures/item/stone_pickaxe.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 182,
+      "sha256": "bc08f9de56c707b3b1aa9993be8a359d3367874c4666ada936f5544535d68d39"
+    },
+    {
+      "file": "iron-pickaxe.png",
+      "jarEntry": "assets/minecraft/textures/item/iron_pickaxe.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 182,
+      "sha256": "b211a9b920d8f22ce5451780855155644d14ca7b85ab16d31f9c0b572cdda7ee"
+    },
+    {
+      "file": "diamond-pickaxe.png",
+      "jarEntry": "assets/minecraft/textures/item/diamond_pickaxe.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 182,
+      "sha256": "7672c209d0c66c43d297b3d04513c9e789d03f5ea6ff1e564a4dbc1fd78a5c88"
+    },
+    {
+      "file": "netherite-pickaxe.png",
+      "jarEntry": "assets/minecraft/textures/item/netherite_pickaxe.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 187,
+      "sha256": "41c9ad71baa4c2ccfa3fb983fe415526fcce173e53d13d9b8956b8da0e7b371e"
+    },
+    {
+      "file": "raw-gold.png",
+      "jarEntry": "assets/minecraft/textures/item/raw_gold.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 218,
+      "sha256": "1cd44c35178953ca5791e2a059e9c12e97519d554064f171b1d55f79fb2a407d"
+    },
+    {
+      "file": "gold-ingot.png",
+      "jarEntry": "assets/minecraft/textures/item/gold_ingot.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 199,
+      "sha256": "b4e38d8476c35fafd18dba27ab2ec0304cedc7296ca170fd723afae5a08b2a2d"
+    },
+    {
+      "file": "quartz.png",
+      "jarEntry": "assets/minecraft/textures/item/quartz.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 230,
+      "sha256": "a7907753e1d8cc6646b503b6a32eb61efc13486f556588e2d5a94e1cb2f0fb39"
+    },
+    {
+      "file": "netherite-scrap.png",
+      "jarEntry": "assets/minecraft/textures/item/netherite_scrap.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 201,
+      "sha256": "f3a32f64996eaa7859b0239c7a01dd9f00331f8cb062915e9c3f5be3f1c82f23"
+    },
+    {
+      "file": "iron-axe.png",
+      "jarEntry": "assets/minecraft/textures/item/iron_axe.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 178,
+      "sha256": "8dea40bac06c6f14bb0ad9e8b47de63250f6d6a46ae9439b85ddd1377f1edb49"
+    },
+    {
+      "file": "golden-axe.png",
+      "jarEntry": "assets/minecraft/textures/item/golden_axe.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 179,
+      "sha256": "e709211f89ef1d4dd05eea8ea4a9b48ca323fc57c8390ceead92923f0f065a46"
+    },
+    {
+      "file": "lava-still.animation.json",
+      "jarEntry": "assets/minecraft/textures/block/lava_still.png.mcmeta",
+      "bytes": 426,
+      "sha256": "6a19bef21d66aac8fdcd8032751057733e321446b304d38f5ee8ba35efe99a1d",
+      "animation": {
+        "frametime": 2,
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "file": "lava-flow.animation.json",
+      "jarEntry": "assets/minecraft/textures/block/lava_flow.png.mcmeta",
+      "bytes": 44,
+      "sha256": "af915735740bd046c85e66fc03c47bb31517ef64f1721726151ea5de8cf121e3",
+      "animation": {
+        "frametime": 3
+      }
+    },
+    {
+      "file": "nether-portal.animation.json",
+      "jarEntry": "assets/minecraft/textures/block/nether_portal.png.mcmeta",
+      "bytes": 21,
+      "sha256": "802acdb8f55f30146d5ed18414b21ba35650d4e550f81825ea104131c12dc4fc",
+      "animation": {}
+    },
+    {
+      "file": "crimson-stem.animation.json",
+      "jarEntry": "assets/minecraft/textures/block/crimson_stem.png.mcmeta",
+      "bytes": 70,
+      "sha256": "a1d4171d971c3a7b3202d9aa67062f643f579443a71cc92efe38f1acd8990f03",
+      "animation": {
+        "interpolate": true,
+        "frametime": 10
+      }
+    },
+    {
+      "file": "nether-gold-ore.png",
+      "jarEntry": "assets/minecraft/textures/block/nether_gold_ore.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 255,
+      "sha256": "2e8b34d2f640c171bf26e63ffe279f29d2b3acad34d60fd240c6d46bec5aedc0"
+    },
+    {
+      "file": "nether-quartz-ore.png",
+      "jarEntry": "assets/minecraft/textures/block/nether_quartz_ore.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 255,
+      "sha256": "b8083d01cbaf82ad2f6101646dcfa64bcedaa49f1c9363dca478ee0a1c378978"
+    },
+    {
+      "file": "ancient-debris-side.png",
+      "jarEntry": "assets/minecraft/textures/block/ancient_debris_side.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 207,
+      "sha256": "b357286224a18b152312601f920f83939249b51d1229c9811e3e6aa8659ee57d"
+    },
+    {
+      "file": "ancient-debris-top.png",
+      "jarEntry": "assets/minecraft/textures/block/ancient_debris_top.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 222,
+      "sha256": "12c41056de502e7f8723367108143f7e386f3001b8c838234978d4e5be25676d"
+    },
+    {
+      "file": "slime-block.png",
+      "jarEntry": "assets/minecraft/textures/block/slime_block.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 195,
+      "sha256": "9175dd2ac2a6e93c0e5c3b46e5006fd9f230ee005b7da3ea109f6d872e30209d"
+    },
+    {
+      "file": "slime-ball.png",
+      "jarEntry": "assets/minecraft/textures/item/slime_ball.png",
+      "width": 16,
+      "height": 16,
+      "bytes": 197,
+      "sha256": "b6dc3e58310ed184499862f67ed6462cd469c9e3d4655b01758474bd77a478b1"
+    }
+  ],
+  "versionJsonChecksumVerified": true,
+  "releaseNotesUrl": "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21-5",
+  "workbenchGeometryReferences": [
+    "assets/minecraft/models/block/enchanting_table.json",
+    "assets/minecraft/models/block/template_anvil.json"
+  ],
+  "realmAssetsRetrieved": "2026-11-14",
+  "slimeAssetsExtracted": "2026-11-14"
+}

@@ -1,0 +1,9 @@
+.ricochet-status{position:absolute;left:15px;top:35px;z-index:3;max-width:255px;padding:8px 10px;background:#182215e6;border:2px solid #83784e;box-shadow:inset 1px 1px #c4ae71;pointer-events:none;text-shadow:1px 1px #10170d}
+.ricochet-status strong{display:block;font-size:12px;color:#ffe4a0;letter-spacing:.3px}
+.ricochet-status span{display:block;font-size:9px;color:#d2d8b7;margin-top:5px}
+.ricochet-status small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:8px;color:#a5d9de;line-height:1.7;margin-top:3px}
+.ricochet-status small:empty{display:none}
+.ricochet-status[data-linked="true"]{border-color:#659b9b;box-shadow:inset 1px 1px #a7e3df}
+.ricochet-status[data-linked="true"] strong{color:#c9fcff}
+@media(max-width:800px){.ricochet-status{left:10px;top:31px;max-width:205px;padding:6px 8px}.ricochet-status strong{font-size:10px}.ricochet-status span{font-size:8px}.ricochet-status small{font-size:7px}}
+@media(max-width:480px){.ricochet-status{max-width:54%;padding:5px 6px;top:30px;left:8px}.ricochet-status strong{font-size:9px}.ricochet-status span{font-size:7px;margin-top:3px}.ricochet-status small{font-size:7px}}

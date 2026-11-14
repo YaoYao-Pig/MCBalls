@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#171e16">
+  <meta name="description" content="按住方块向后拖拽，击退四面来袭的怪物。升级木棍、方块和信标基地，守住你的世界。非官方同人原型。">
+  <title>我的世界弹弹乐 · 方块守卫战</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/icon.svg">
+  <link rel="stylesheet" href="./src/voxel.css">
+  <link rel="stylesheet" href="./src/world-ui.css">
+  <link rel="stylesheet" href="./src/workbench.css">
+  <link rel="stylesheet" href="./src/expedition-ui.css">
+  <link rel="stylesheet" href="./src/ricochet.css">
+  <link rel="stylesheet" href="./src/combat-feedback.css">
+  <link rel="stylesheet" href="./src/beacon.css">
+  <link rel="stylesheet" href="./src/aim-feedback.css">
+  <link rel="stylesheet" href="./src/build-ui.css">
+  <link rel="stylesheet" href="./src/upgrade-target-ui.css">
+  <link rel="stylesheet" href="./src/action-sidebar.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="我的世界弹弹乐首页"><span class="brand-mark"></span><span>我的世界弹弹乐<small>BLOCKS. MOBS. ONE MORE SHOT.</small></span></a>
+      <div class="top-center"><i></i> 方块守卫战 <span>生存模式</span></div>
+      <div class="top-actions">
+        <button id="quality-button" class="quality-button" aria-label="切换到流畅画质" title="切换光影画质">☀ 光影</button>
+        <button id="craft-button" class="shop-button" title="合成工作台 · C">合成 <kbd>C</kbd></button>
+        <button id="shop-button" class="shop-button" title="村民商店 · E">村民商店 <kbd>E</kbd></button>
+        <button id="view-button" class="icon-button" aria-label="旋转三维视角" title="旋转三维视角">↻</button>
+        <button id="music-button" class="icon-button" aria-label="关闭背景音乐" title="原创背景音乐">♫</button>
+        <button id="sound-button" class="icon-button" aria-label="关闭全部声音" title="全部声音"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m11 5-5 4H3v6h3l5 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg></button>
+        <button id="pause-button" class="icon-button" aria-label="暂停游戏" title="暂停 · Esc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5v14M16 5v14"/></svg></button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <div class="intro"><p class="eyebrow">OVERWORLD · SURVIVAL</p><h1>方块开球，<br>怪物退散<span>！</span></h1><p class="intro-sub">用一根木棍，守住你的世界。<br>球、球杆、基地，三线进化。</p></div>
+        <section class="base-card" aria-label="基地状态">
+          <div class="section-line"><span><i class="status-dot"></i> 信标基地</span><span id="hp-text" class="mono">120 / 120</span></div>
+          <div id="hp-hearts" class="hp-hearts" aria-hidden="true"></div>
+          <div class="hp-track"><div id="hp-fill"></div></div>
+          <div class="base-caption"><span id="base-status">防线就绪</span><span id="shield-text">无护盾</span></div>
+        </section>
+        <section class="run-stats" aria-label="本局数据">
+          <div><span>本局得分</span><strong id="score">00000</strong></div><div><span>消灭怪物</span><strong id="kills">0</strong></div>
+        </section>
+        <section class="loadout-section">
+          <div class="section-line"><span>装备与附魔</span><span id="build-count" class="subtle">01</span></div>
+          <div id="loadout" class="loadout"></div>
+        </section>
+        <div class="side-bottom"><span class="record-icon">✦</span><div><span>个人最佳</span><strong id="best-score">0</strong></div><span class="local-tag">此设备</span></div>
+      </aside>
+
+      <section class="play-area" aria-label="游戏区域">
+        <div class="arena-header"><div class="wave-label"><span id="wave-number">01</span><div><b id="wave-title">等待开球</b><span id="enemy-scaling" class="enemy-scaling" title="仅影响本波新出现的怪物">新生怪血量 ×1.00</span><small id="wave-subtitle">THE OPENING SHOT</small></div></div><span id="overcharge-status" class="overcharge-status" hidden>红石过载</span><div class="run-clock"><span id="clock">00:00</span><small id="stage-clock">主世界</small></div><div class="level-pill">LV.<strong id="run-level">1</strong><small class="xp-wallet">附魔经验 <span id="level">0</span></small></div></div>
+        <div class="expedition-bar"><div><strong id="realm-label">主世界</strong><span id="weather-label">☀ 晴天</span></div><p id="objective-text">收集黑曜石，搭建下界传送门。</p><button id="portal-action" hidden>搭建传送门</button></div>
+        <div id="level-progress" class="xp-track" aria-label="升级经验进度"><div id="xp-fill"></div></div>
+        <div class="arena-shell">
+          <canvas id="game-canvas" width="1000" height="720" tabindex="0" aria-label="方块战场。按住一个方块向后拖拽，松开击球。R 键召回草方块，Esc 暂停。"></canvas>
+          <canvas id="fx-canvas" width="1000" height="720" aria-hidden="true"></canvas>
+          <div class="arena-corner corner-left"><b id="arena-realm">主世界</b> <span>◆</span> 信标保卫战</div>
+          <div class="arena-corner corner-right" id="arena-state">STANDBY</div>
+          <div id="combo" class="combo" hidden><strong>0</strong><span>连击</span></div>
+          <div id="ricochet-status" class="ricochet-status" aria-label="本轮弹射连锁" hidden><strong data-ricochet-heading></strong><span data-ricochet-detail></span><small data-ricochet-effects></small></div>
+          <div id="base-hover-hint" class="base-hover-hint" hidden>点击信标 · 升级与雇佣 <kbd>B</kbd></div>
+          <div id="aim-feedback" class="aim-feedback" aria-live="polite" hidden></div>
+          <div id="slow-time-status" class="slow-time-status" hidden></div>
+          <div id="beam-charge-status" class="beam-charge-status" aria-live="off" hidden></div>
+          <div id="upgrade-target-panel" hidden></div>
+          <div id="toast" class="toast" role="status"></div>
+          <div id="phase-announcement" class="phase-announcement" hidden><small id="phase-caption">天气变化</small><strong id="phase-name">雨天</strong><span id="phase-description"></span></div>
+          <div id="start-panel" class="start-panel">
+            <span class="eyebrow">A STICK. A BLOCK. A WHOLE WORLD.</span>
+            <h2>天快黑了，准备开球。</h2>
+            <p>合成镐子，开采黑曜石，穿过下界。<br>回归守城，踏入末地，击败末影龙！</p>
+            <button id="start-button" class="primary-button">开始生存 <span>▶</span></button>
+            <div class="start-note"><span class="key-cap">鼠标 / 触屏</span> 按住方块 · 向后拖拽 · 松开发射</div>
+          </div>
+          <div id="pause-panel" class="modal-backdrop" hidden><div class="dialog pause-dialog"><span class="eyebrow">TAKE A BREATH</span><h2>下一杆，想好了再打。</h2><p>战场已暂停。</p><button id="resume-button" class="primary-button">继续守卫 <span>↗</span></button><button id="restart-button" class="text-button">重新开局</button></div></div>
+          <div id="upgrade-panel" class="modal-backdrop merchant-backdrop" hidden><div class="upgrade-dialog" role="dialog" aria-modal="true" aria-labelledby="upgrade-title"><span class="eyebrow">本局成长 · 免费三选一</span><h2 id="upgrade-title">升级了！选一项强化。</h2><p>不消耗附魔经验，也不覆盖装备已有的附魔。</p><div id="upgrade-choices" class="upgrade-choices"></div><div id="upgrade-note" class="upgrade-note">战场已暂停 · 按 1 / 2 / 3 选择</div></div></div>
+          <div id="shop-panel" class="modal-backdrop merchant-backdrop" hidden><div class="shop-dialog" role="dialog" aria-modal="true" aria-labelledby="shop-title"><div class="shop-heading"><div><span class="eyebrow">村民交易 · 每波更新库存</span><h2 id="shop-title">来换点好东西。</h2></div><button id="shop-close" class="icon-button" aria-label="关闭商店">×</button></div><div id="shop-tabs" class="shop-tabs"><button data-shop-tab="materials" class="active">材料</button><button data-shop-tab="items">道具</button><button data-shop-tab="allies">友军</button><button data-shop-tab="books">附魔书</button></div><div id="shop-materials" class="materials"></div><div id="shop-recipes" class="shop-recipes"></div><div class="upgrade-note">基地升级与村民雇佣请点击信标 B · 制作装备按 C</div></div></div>
+          <div id="crafting-panel" class="modal-backdrop crafting-backdrop" hidden><div class="crafting-dialog" role="dialog" aria-modal="true" aria-labelledby="crafting-title"><div class="shop-heading"><div><span class="eyebrow">合成工作台 · 材料摆放预览</span><h2 id="crafting-title">下一件装备，亲手造。</h2></div><button id="crafting-close" class="icon-button" aria-label="关闭合成台">×</button></div><div class="crafting-content"><section class="crafting-detail"><div class="crafting-layout"><div id="crafting-grid" class="crafting-grid"></div><span class="craft-arrow">→</span><div class="crafting-product"><img id="crafting-product-icon" alt="合成产物"><b id="crafting-product-name"></b><small id="crafting-owned"></small></div></div><p id="crafting-description"></p><div id="crafting-costs"></div><button id="crafting-action" class="primary-button">合成</button><p id="crafting-reason"></p></section><section class="crafting-list"><div id="crafting-filters"></div><div id="crafting-recipes"></div></section></div></div></div>
+          <div id="station-panel" class="modal-backdrop merchant-backdrop" hidden><div class="station-dialog" role="dialog" aria-modal="true" aria-labelledby="station-title">
+            <div class="shop-heading"><div><span class="eyebrow" id="station-caption">工作台</span><h2 id="station-title">附魔台</h2></div><span id="station-xp" class="station-xp">可用经验 0</span><button id="station-close" class="icon-button" aria-label="关闭工作台">×</button></div>
+            <div id="station-tabs" class="station-tabs"><button data-station-tab="add">增量附魔</button><button data-station-tab="book">使用附魔书</button><button data-station-tab="fusion">融合方块</button></div>
+            <div id="enchant-body"><div class="target-row"><label for="enchant-target">选择装备</label><select id="enchant-target" aria-label="附魔目标装备"></select><small id="enchant-slot-count">0 / 4 项</small></div><div id="current-enchants" class="current-enchants"></div>
+              <div id="enchant-action-area"><div class="enchant-description"><strong id="enchant-mode-name">随机附魔</strong><p id="enchant-mode-description"></p></div><button id="enchant-action" class="primary-button">随机附魔</button><p id="enchant-reason" class="station-reason"></p></div><div id="book-choices" class="book-choices" hidden></div>
+            </div>
+            <div id="fusion-body" hidden><div class="fusion-selectors"><label>主体方块<select id="fusion-a" aria-label="主体方块"></select></label><span>＋</span><label>融合材料<select id="fusion-b" aria-label="融合材料方块"></select></label></div><div class="fusion-result"><strong id="fusion-result-name">选择两块方块</strong><p id="fusion-result-traits"></p></div><button id="fusion-action" class="primary-button">融合方块</button><p id="fusion-reason" class="station-reason"></p></div>
+          </div></div>
+          <div id="beacon-panel" class="modal-backdrop beacon-backdrop" hidden><div class="beacon-dialog" role="dialog" aria-modal="true" aria-labelledby="beacon-title"><div class="beacon-heading"><h2 id="beacon-title">信标</h2><button id="beacon-close" class="icon-button" aria-label="关闭信标">×</button></div><div id="beacon-content"></div></div></div>
+          <button id="qte-button" class="qte-button" hidden>快速点击！<span id="qte-count">7</span></button>
+          <div id="boss-intro" class="boss-intro" hidden><div><small>强敌来袭</small><strong id="boss-name">凋零</strong></div><img id="boss-portrait" alt="Boss 出场"></div>
+          <div id="end-panel" class="modal-backdrop" hidden><div class="dialog result-dialog"><span class="eyebrow" id="end-eyebrow">UNTIL THE NEXT SHOT</span><h2 id="end-title">再来一杆。</h2><p id="end-description"></p><div class="result-stats"><div><span>得分</span><strong id="end-score">0</strong></div><div><span>击杀</span><strong id="end-kills">0</strong></div><div><span>最高连击</span><strong id="end-combo">0</strong></div></div><button id="again-button" class="primary-button">再开一局 <span>↗</span></button></div></div>
+        </div>
+      </section>
+      <aside class="action-sidebar" aria-label="球杆、构筑与材料操作">
+        <div class="action-sidebar-heading">操作与构筑 <span>随时备战</span></div>
+        <div class="control-bar">
+          <div class="rod-equipment"><div class="hotbar" id="hotbar" aria-label="切换球杆"></div><small id="equipped-rod-name">木棍 · 1–4 切换</small></div>
+          <div class="power-control"><div><span id="power-label">拖拽瞄准</span><span id="power-value">按住一个方块</span></div><div class="power-track"><div id="power-fill"></div><i></i></div></div>
+          <button id="recall-button" class="recall-button"><span class="recall-icon">↶</span><span>召回草方块<small id="recall-status">随时回防</small></span><kbd>R</kbd></button>
+        </div>
+        <div id="build-panel"></div>
+        <div class="inventory-bar"><div id="materials" class="materials"></div><div id="consumables" class="consumables"></div></div>
+        <div class="workstation-bar"><button id="beacon-button" disabled>信标 · 升级与雇佣 <kbd>B</kbd></button><span id="beacon-world-state" class="beacon-world-state" hidden></span><span id="pickaxe-status" class="pickaxe-status">采集：徒手</span><button id="enchanting-table-button" hidden>使用附魔台 <kbd>F</kbd></button><button id="anvil-button" hidden>使用铁砧 <kbd>G</kbd></button><span id="station-unlock-hint">按 C 合成镐子、附魔台与铁砧。</span><span id="book-count" class="book-count">附魔书 0</span></div>
+        <footer class="game-footer"><span><i class="hint-dot"></i><span id="game-hint">按住方块向后拖，松手朝反方向发射。</span></span><span class="footer-right">拖拽时慢动作 · 接住快球获得加成</span></footer>
+      </aside>
+    </main>
+    <footer class="app-footer"><span>非官方玩家作品，与 Mojang 或 Microsoft 无关联，未获其认可。</span><a href="./assets/minecraft/CREDITS.html" target="_blank" rel="noopener">原版素材来源与项目说明 ↗</a></footer>
+  </div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

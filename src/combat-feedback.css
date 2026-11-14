@@ -1,0 +1,6 @@
+.combo[data-tier="1"]{color:#ffe69e}.combo[data-tier="2"]{color:#ffc16c;filter:drop-shadow(0 0 5px #d95f32)}.combo[data-tier="3"]{color:#ffdf9e;filter:drop-shadow(0 0 8px #f07832);transform:rotate(-5deg)}
+.combo[data-tier="2"] strong{font-size:40px}.combo[data-tier="3"] strong{font-size:46px}
+#music-button{font-size:21px;font-weight:bold}#music-button.muted{opacity:.45}.arena-shell{--impact-x:0px;--impact-y:0px}#game-canvas,#fx-canvas{transform:translate(var(--impact-x),var(--impact-y))}
+.toast[data-bottom="true"]{top:auto;bottom:22px}
+@media(max-width:480px){#music-button{font-size:15px}.combo[data-tier="2"] strong{font-size:29px}.combo[data-tier="3"] strong{font-size:34px}}
+@media(prefers-reduced-motion:reduce){.combo[data-tier]{transform:none}#game-canvas,#fx-canvas{transform:none}}
